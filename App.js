@@ -29,8 +29,10 @@ export default function App() {
       <GameEngine
         ref={engine}
         style={styles.container}
-        systems={[Drag]}
-        entities={restart()}
+        systems={[Drag]} //logic related stuff...
+        entities={restart()} 
+        //entities => {{...props,renderer:<renderingComponent>}}
+        //restart => {Bubbles()} , Bubbles=>{...props,renderer}
         running={true}
       >
         <StatusBar style="auto" hidden={true} />

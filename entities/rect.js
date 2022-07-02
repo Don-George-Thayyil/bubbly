@@ -16,17 +16,16 @@ const ObjectRect = (props) => {
             position:"absolute",
             top:yBody,
             left:xBody,
-            backgroundColor:"red"
+            backgroundColor:"white"
         }}/>
     )
 
 }
 
 function Rect(props) {
-    const rectangle = Matter.Bodies.rectangle(400, 700, 400, 40);
+    const rectangle = Matter.Bodies.rectangle(props.x, props.y, props.size.w, props.size.h);
     Matter.Body.setStatic(rectangle, true);
     Matter.World.add(props.world, rectangle);
-    console.log("rectangle:",rectangle.area);
     return {
         body: rectangle,
         renderer: <ObjectRect />
