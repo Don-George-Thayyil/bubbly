@@ -1,3 +1,3 @@
 # Bubbly for React-Native Projects
 
-This is a customized Bubble UI, similar to the Apple Music UI
+This is a bubbles UI, similar to the Apple Music bubble UI
