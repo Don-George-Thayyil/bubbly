@@ -15,9 +15,11 @@ RNGE essentially provides an interface to include physics into the app. And phys
 
 App.js uses index.js file inside the entities folder, which uses bubbles and rect files. App.js also uses dragMechanism.js defined in Components folder as the logic part.
 
-clone the repo.
-```https://github.com/Don-George-Thayyil/bubbly.git```
-use
+clone the repo using
+```
+git clone https://github.com/Don-George-Thayyil/bubbly.git
+```
+Then install and run using 
 ```
 npm install 
 npm start
